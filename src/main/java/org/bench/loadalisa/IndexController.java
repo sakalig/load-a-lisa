@@ -63,6 +63,7 @@ public class IndexController {
         int x = new Random().nextInt(16);
         String saveToPath = "";
 
+        // TODO: Make asset accessible from 'resources/images' instead of 'target/classes/images'
         Resource imageResource = new ClassPathResource("images/mona_lisa_1920x1080.jpg");
 
         if (imageResource.exists()) {
