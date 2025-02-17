@@ -42,6 +42,7 @@ public class IndexController {
 
     @GetMapping("/image")
     public ResponseEntity<byte[]> getImage() throws IOException {
+
         // Load image from classpath (inside resources or the package)
         Resource imageResource = new ClassPathResource("images/mona_lisa_1920x1080.jpg");
 
