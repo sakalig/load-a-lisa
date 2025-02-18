@@ -112,7 +112,6 @@ public class IndexController {
             }
             System.out.println("Image partitions created");
         } else {
-            //System.out.println(imgFile.getName() + " already exists");
             System.out.println("File does not exist");
         }
 
