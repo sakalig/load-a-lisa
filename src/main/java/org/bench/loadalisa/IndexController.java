@@ -60,7 +60,6 @@ public class IndexController {
     public ResponseEntity<byte[]> getImages() throws IOException {
 
         //File imgFile = new File("images/mona_lisa_" + String.valueOf(x) + ".jpg");
-        byte[] randomBytes = null;
         int x = new Random().nextInt(16);
         String saveToPath = "";
 
@@ -121,9 +120,6 @@ public class IndexController {
 
         //return new ResponseEntity<>(Files.readAllBytes(Paths.get("images/mona_lisa_" + String.valueOf(new Random().nextInt(16)) + ".jpg")), headers, HttpStatus.OK);
         byte[] imageBytes = Files.readAllBytes(imageResource.getFile().toPath());
-        if (randomBytes != null) {
-            return new ResponseEntity<>(randomBytes, headers, HttpStatus.OK);
-        }
         return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
     }
 
