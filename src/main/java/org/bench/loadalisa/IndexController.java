@@ -101,7 +101,6 @@ public class IndexController {
 
 
             for (int i = 0; i < 16; i++) {
-                //File outputFile = new File("images/mona_lisa_" + i + ".jpg");
                 System.out.println("Writing to: " + saveToPath);
                 File outputFile = new File(saveToPath + "/mona_lisa_" + i + ".jpg");
                 try (ImageOutputStream ios = ImageIO.createImageOutputStream(outputFile)) {
