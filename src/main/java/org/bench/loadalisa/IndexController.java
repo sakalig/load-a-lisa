@@ -106,7 +106,7 @@ public class IndexController {
                 try (ImageOutputStream ios = ImageIO.createImageOutputStream(outputFile)) {
                     ImageIO.write(imgs[i], "jpg", ios);
                 }
-                System.out.println("Image written succcessfully");
+                System.out.println("Image written successfully");
             }
             System.out.println("Image partitions created");
         } else {
