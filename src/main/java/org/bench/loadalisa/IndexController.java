@@ -97,9 +97,6 @@ public class IndexController {
             }
             System.out.println("Total fragments: " + imgs.length);
 
-            // Buffered image to bytes
-
-
             for (int i = 0; i < 16; i++) {
                 System.out.println("Writing to: " + saveToPath);
                 File outputFile = new File(saveToPath + "/mona_lisa_" + i + ".jpg");
