@@ -114,7 +114,6 @@ public class IndexController {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type", "image/jpeg");
 
-        //return new ResponseEntity<>(Files.readAllBytes(Paths.get("images/mona_lisa_" + String.valueOf(new Random().nextInt(16)) + ".jpg")), headers, HttpStatus.OK);
         byte[] imageBytes = Files.readAllBytes(imageResource.getFile().toPath());
         return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
     }
