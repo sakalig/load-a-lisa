@@ -87,9 +87,7 @@ public class IndexController {
                     imgs[current_img] = new BufferedImage(subimage_Width, subimage_Height, image.getType());
                     Graphics2D img_creator = imgs[current_img].createGraphics();
 
-                    int src_first_x = subimage_Width * j, src_first_y = subimage_Height * i;
-
-                    int dst_corner_x = subimage_Width * j + subimage_Width, dst_corner_y = subimage_Height * i + subimage_Height;
+                    int src_first_x = subimage_Width * j, src_first_y = subimage_Height * i, dst_corner_x = subimage_Width * j + subimage_Width, dst_corner_y = subimage_Height * i + subimage_Height;;
 
                     img_creator.drawImage(image, 0, 0, subimage_Width, subimage_Height, src_first_x, src_first_y, dst_corner_x, dst_corner_y, null);
                     current_img++;
