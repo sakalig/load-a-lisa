@@ -69,7 +69,6 @@ public class IndexController {
         if (imageResource.exists()) {
             saveToPath = imageResource.getFile().getParentFile().getAbsolutePath();
             System.out.println("No partitions exist");
-            //Resource imageResource = new ClassPathResource("images/mona_lisa_1920x1080.jpg");
             InputStream is = imageResource.getInputStream();
             BufferedImage image = ImageIO.read(is);
 
