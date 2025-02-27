@@ -60,7 +60,6 @@ public class IndexController {
     public ResponseEntity<byte[]> getImages() throws IOException {
 
         //File imgFile = new File("images/mona_lisa_" + String.valueOf(x) + ".jpg");
-        int x = new Random().nextInt(16);
         String saveToPath = "";
 
         // TODO: Make asset accessible from 'resources/images' instead of 'target/classes/images'
