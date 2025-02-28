@@ -113,4 +113,9 @@ public class IndexController {
         return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
     }
 
+    @GetMapping("/benchmarks")
+    public ResponseEntity<byte[]> getBench() throws IOException {
+        return null;
+    }
+
 }
