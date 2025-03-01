@@ -115,6 +115,7 @@ public class IndexController {
 
     @GetMapping("/benchmarks")
     public ResponseEntity<byte[]> getBench() throws IOException {
+        // TODO: Run latency test (ms)
         return null;
     }
 
