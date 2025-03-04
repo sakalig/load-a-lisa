@@ -96,7 +96,7 @@ public class IndexController {
                 System.out.println("Writing to: " + saveToPath);
                 File outputFile = new File(saveToPath + "/mona_lisa_" + i + ".jpg");
                 try (ImageOutputStream ios = ImageIO.createImageOutputStream(outputFile)) {
-                    ImageIO.write(imgs[i], "jpg", ios);
+                    ImageIO.write(imgs[i], "jpg", ios); // TODO: include support for multiple image types
                 }
                 System.out.println("Image written successfully");
             }
