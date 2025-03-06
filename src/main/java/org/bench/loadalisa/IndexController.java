@@ -73,7 +73,7 @@ public class IndexController {
 
             int rows = 4, columns = 4;
 
-            BufferedImage imgs[] = new BufferedImage[16];
+            BufferedImage imgs[] = new BufferedImage[rows * columns];
 
             int subimage_Width = image.getWidth() / columns, subimage_Height = image.getHeight() / rows;;
 
